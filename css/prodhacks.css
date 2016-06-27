@@ -266,6 +266,7 @@ input[type="submit"]:hover {
     Font-family:OpenLight;
     padding-bottom:20;
     line-height:normal;
+    padding-top:40px;
 }
 
 #section1 a:hover {
@@ -291,6 +292,19 @@ input[type="submit"]:hover {
     border:solid white 2px;
 } 
 
+.typeform-widget {
+    width:100%;height:0px;
+}
+
+.typeform-widget open {
+    height:500px;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+}
+
 .button:hover {
     background-color:white;
 }
@@ -299,7 +313,7 @@ input[type="submit"]:hover {
 h3 {
     font-family:Open Sans;
     font-weight:200;
-    font-size:24;
+    font-size:30;
     padding-top:20px;
 }
 
@@ -384,15 +398,70 @@ h3 {
     background: -moz-linear-gradient(#0D987C, #57CCB3); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#0D987C, #57CCB3); /* Standard syntax */
     color:white;
+    padding-top:117px;
+    padding-bottom:77px;
     background-image:url(../prodpics/bgb.png);
     background-size:1366px;
-    padding-bottom:30px;
+}
+
+#section3 {
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#saturday {
+    width:45%;
+    float:left;
+    padding:0;
+}
+
+#sunday {
+    width:45%;
+    float:right;
+    padding:0;
+}
+
+#clear {
+    clear:both;
+}
+
+#section3 h2 {
+    padding-bottom:9px;
+}
+
+#section3 #line {
+    width:100%;
+    height:7px;
+    background-color:white;
+    margin-bottom:43px;
+}
+
+#section3 h4 {
+    font-family:Noto;
+    font-weight:100;
+    font-size:23.52;
+}
+
+#section3 h6 {
+    font-family:OpenLight;
+    font-size:19.6px;
+    letter-spacing:2.45;
+    line-height:27px;
+}
+
+#section3 h5 {
+    font-family:Open Sans;
+    font-weight:normal;
+    font-size:25.2px;
+    letter-spacing:3.15;
+    line-height:34px;
+    margin-bottom:43px;
 }
 
 .scrollup2 {
     position:absolute;
     margin-left:5%;
-    top:96%;
+    top:97.2%;
     z-index:1000;
 }
 
@@ -515,86 +584,7 @@ h3 {
     color:white;
     font-family:NotoBold;
 }
-
-/*--Slide 6--*/
-
-
-.slide6{
-    position:relative;
-    padding-top:117px;
-    padding-bottom:77px;
-}
-
-#section3 {
-    margin-left:10%;
-    margin-right:10%;
-}
-
-#saturday {
-    width:45%;
-    float:left;
-    padding:0;
-}
-
-#sunday {
-    width:45%;
-    float:right;
-    padding:0;
-}
-
-#clear {
-    clear:both;
-}
-
-#section3 h2 {
-    padding-bottom:9px;
-}
-
-#section3 #line {
-    width:100%;
-    height:7px;
-    background-color:white;
-    margin-bottom:43px;
-}
-
-#section3 h4 {
-    font-family:Noto;
-    font-weight:100;
-    font-size:23.52;
-}
-
-#section3 h6 {
-    font-family:OpenLight;
-    font-size:19.6px;
-    letter-spacing:2.45;
-    line-height:27px;
-    opacity:0.7;
-}
-
-#section3 h5 {
-    font-family:Open Sans;
-    font-weight:normal;
-    font-size:25.2px;
-    letter-spacing:3.15;
-    line-height:34px;
-    margin-bottom:43px;
-}
-
-#section3 #line {
-    width:100%;
-    height:7px;
-    background-color:#0D987C;
-    margin-bottom:43px;
-}
-
-#section3 h3 {
-    font-size:16px;
-    opacity:0.5;
-}
-
-#section3 h4 {
-    font-size:20px;
-}
+    
 
 /*-- Media Queries --*/
 
@@ -726,6 +716,10 @@ h3 {
     top:98.2%;
     }
     
+    .scrollup2 {
+    top:98.2%;
+    }
+    
     #down {
         left:42%;
     }
@@ -739,10 +733,6 @@ h3 {
         width:150px;
         height:30px;
         line-height:30px;
-    }
-    
-    #section1 h2 {
-        font-size:25px;
     }
 
 
@@ -822,9 +812,13 @@ h3 {
     
     p {
         font-weight:400;
-        font-size:15px;
     }
     
     
     
 }
+
+@media screen and (max-width:375px) {
+    
+    p {
+        font-size:15px;
